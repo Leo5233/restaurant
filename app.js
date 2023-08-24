@@ -17,7 +17,6 @@ app.get('/', (req, res) => {
 
 app.get('/search',(req, res) => {
   const keyword = req.query.keyword
-  console.log(keyword)
 
   if (keyword){
     filterRestaurants = restaurants.filter( rs => {
@@ -36,7 +35,6 @@ app.get('/search',(req, res) => {
 app.get('/restaurants/:id', (req, res) => {
   const id = req.params.id
   const oneStore = restaurants.find( restaurant => restaurant.id.toString() === id)
-  console.log(oneStore)
   res.render('showPage', { oneStore })
 })
 
