@@ -6,7 +6,7 @@
 
 進入存放此專案的資料夾
 
-    cd restaurantList
+    cd restaurant
 
 使用npm安裝 express和express-handlebars
 
